@@ -1,0 +1,1021 @@
+@font-face {
+  font-family: Gopher;
+  src: url('./fonts/gopher/Gopher-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Light';
+  src: url('./fonts/gotham-rounded/GothamRounded-Light.otf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* NAVEGACION */
+
+.contenedor-principal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media (min-width: 1366px) {
+
+.logotipo {
+  height: 180px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  justify-self: center;
+  align-self: center;
+}
+
+.contenedor-navegacion {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to bottom, #c58511, #efc881, transparent);
+  height: 24vh;
+}
+
+.contenedor-navegacion > button {
+  background-color: transparent;
+  color: #1d1d1b;
+  border: none;
+  padding: 24px;
+  margin-left: 36px;
+  margin-right: 36px;
+  font-family: Gopher;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: all .2s ease-in-out;
+}
+
+.contenedor-navegacion > button > a {
+  font-style: none;
+  color: #1d1d1b;
+  text-decoration: none;
+  transition: all .2s ease-in-out;
+}
+
+.contenedor-navegacion > button > a:hover {
+  font-style: none;
+  font-weight: bolder;
+  color: white;
+  text-decoration: none;
+}
+
+.contenedor-navegacion > button:hover {
+  transform: scale(1.1);
+  font-weight: bolder;
+  color: white;
+}
+}
+
+.solicite-main {
+  height: 76vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.solicite-main > a > button{
+  padding: 12px;
+  background-color: transparent;
+  font-family: Gotham Rounded Light, sans-serif;
+  font-size: 18px;
+  color: #efc881;
+  border: 2px solid #c58511;
+  background-color: #1d1d1b;
+  padding-left: 24px;
+  padding-right: 24px;
+  transition: all .2s ease-in-out;
+}
+
+.solicite-main > a > button:hover{
+  transform: scale(1.2);
+  padding: 12px;
+  background-color: transparent;
+  font-family: Gotham Rounded Light, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #efc881;
+  border: 2px solid #c58511;
+  box-shadow: 0px 0px 10px #efc881;
+  background-color: #1d1d1b;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#turno-main {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./img/main1.jpg');
+  background-size: cover;
+
+}
+
+
+
+/* NAVEGACION */
+
+/* NAVEGACION MOBILE */
+
+@media (max-width: 1366px) {
+
+  #turno-main {
+    height: 100vh;
+    width: 100%;
+    background-image: url('./img/main1.jpg');
+    background-size: cover;
+  
+  }
+  
+
+  .logotipo {
+    height: 64px;
+    justify-self: center;
+    align-self: center;
+  }
+  
+  .contenedor-navegacion {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(to bottom, #c58511, #efc881, transparent);
+    height: 10vh;
+  }
+  
+  .contenedor-navegacion > button {
+    background-color: transparent;
+    color: #1d1d1b;
+    border: none;
+    padding: 2px;
+    font-family: Gopher;
+    cursor: pointer;
+    font-size: 0.6em;
+    transition: all .2s ease-in-out;
+  }
+  
+  .contenedor-navegacion > button > a {
+    font-style: none;
+    color: #1d1d1b;
+    text-decoration: none;
+    transition: all .2s ease-in-out;
+  }
+  .solicite-main {
+    height: 76vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  .solicite-main > a > button{
+    padding: 12px;
+    background-color: transparent;
+    font-family: Gotham Rounded Light, sans-serif;
+    font-size: 18px;
+    color: #efc881;
+    border: 2px solid #c58511;
+    background-color: #1d1d1b;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: all .2s ease-in-out;
+  }
+  
+  }
+  
+
+/* NAVEGACION MOBILE */
+
+
+/* INICIO SOBRE MI */
+
+
+@media (min-width: 1366px) {
+.filler-inicio {
+  height: 100vh;
+}
+
+.filler-img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+  object-position: 100% 5%;
+  position: relative;
+  border-bottom: 2px solid #1d1d1b;
+  z-index: 0.1;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: Gotham Rounded Light;
+  background-color: #1d1d1bc0;
+  padding: 24px;
+  width: 80vw;
+  font-size: 24px;
+  color: #efc981;
+  box-shadow: 0px 0px 20px #1d1d1b;
+}
+
+#acerca {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  z-index: 0.3;
+}
+
+#acerca > h1 {
+  font-family: Gopher;
+  color: #1d1d1b;
+  position: absolute;
+  top: 20%;
+  z-index: 0.3;
+}
+
+.border-1 {
+  position: absolute;
+  z-index: 1;
+  width: 90vw;
+  height: 80vh;
+  border: 3px solid #1d1d1b;
+  pointer-events: none;
+}
+
+.border-2 {
+  position: absolute;
+  z-index: 1;
+  width: 87vw;
+  height: 75vh;
+  border: 1px solid #1d1d1b;
+  pointer-events: none;
+}
+
+#flechita {
+  position: absolute;
+  z-index: 6;
+  bottom: 0;
+  right: 0;
+}
+
+#flechita > img {
+  height: 150px;
+  padding: 24px;
+  
+}
+}
+
+/* INICIO */
+
+/* INICIO MOBILE */
+
+@media (max-width: 1366px) {
+  .filler-inicio {
+    height: 100vh;
+  }
+  
+  .filler-img {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    object-position: 100% 5%;
+    position: relative;
+    border-bottom: 2px solid #1d1d1b;
+    z-index: 0.1;
+  }
+  
+  .main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: Gotham Rounded Light;
+    background-color: #1d1d1bc0;
+    padding: 24px;
+    width: 80vw;
+    font-size: 0.8em;
+    color: #efc981;
+    box-shadow: 0px 0px 20px #1d1d1b;
+  }
+  
+  #acerca {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    z-index: 0.3;
+  }
+  
+  #acerca > h1 {
+    font-family: Gopher;
+    color: #1d1d1b;
+    position: absolute;
+    top: 20%;
+    z-index: 0.3;
+  }
+  
+  .border-1 {
+    position: absolute;
+    z-index: 1;
+    width: 90vw;
+    height: 80vh;
+    border: 3px solid #1d1d1b;
+    pointer-events: none;
+  }
+  
+  .border-2 {
+    position: absolute;
+    z-index: 1;
+    width: 87vw;
+    height: 75vh;
+    border: 1px solid #1d1d1b;
+    pointer-events: none;
+  }
+  
+  #flechita {
+    position: absolute;
+    z-index: 6;
+    bottom: 0;
+    right: 0;
+  }
+  
+  #flechita > img {
+    height: 150px;
+    padding: 24px;
+    
+  }
+  }
+
+/* INICIO MOBILE */
+
+/* EXPERIENCIA COMPETICIONES */
+
+@media (min-width: 1366px) {
+#experiencia {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to left top, #c58511, #efc981);
+}
+
+.copa {
+  width: 64px;
+  z-index: 5;
+}
+
+.container-compet > h3{
+  margin-top: 10px;
+  font-family: Gopher;
+  color: #1d1d1b;
+}
+
+.lista-competiciones {
+  color: #efc981;
+  padding: 4px;
+  font-family: Gotham Rounded Light;
+  font-size: 18px;
+}
+
+.lista-competiciones > li {
+  cursor: default;
+  padding: 8px;
+  border-bottom: 1px solid #c58511
+}
+
+.contenedor-competiciones {
+  display: flex;
+  width: 75vw;
+  align-items: center;
+  justify-content: center;
+}
+
+.competiciones {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #1d1d1b;
+}
+
+.competiciones > h3 {
+  margin-top: 10px;
+  font-family: Gopher;
+  color: #1d1d1b;
+  
+}
+
+.panel {
+  display: block;
+  margin-top: 128px;
+  width: 420px;
+  height: 240px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  border: none;
+  background-color: #1d1d1b;
+  box-shadow: 0px 0px 20px #1d1d1b;
+}
+
+.border-1-compet {
+  position: absolute;
+  z-index: 0.5;
+  width: 90vw;
+  height: 80vh;
+  border: 3px solid #1d1d1b;
+  pointer-events: none;
+}
+
+.border-2-compet {
+  position: absolute;
+  z-index: 0.5;
+  width: 87vw;
+  height: 75vh;
+  border: 1px solid #1d1d1b;
+  pointer-events: none;
+}
+
+#compet-text {
+  width: 400px;
+  height: 240px;
+  text-align: justify;
+  margin-right: 24px;
+  font-family: Gotham Rounded Light, sans-serif;
+  color:#1d1d1b;
+  font-size: 18px;
+
+}
+
+#flechit-compet {
+  display: block;
+  position: absolute;
+  z-index: 1;
+  
+}
+
+#flechita-compet > img {
+  position: absolute;
+  top: 25vh;
+  left: 8vw;
+  height: 150px;
+  padding: 24px;
+  z-index: 1;
+}
+}
+/* EXPERIENCIA COMPETICIONES */
+
+/* EXPERIENCIA COMPETICIONES FULL */
+
+@media (min-width: 1920px) {
+  #experiencia {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left top, #c58511, #efc981);
+  }
+  
+  .copa {
+    width: 64px;
+    z-index: 5;
+  }
+  
+  .container-compet > h3{
+    margin-top: 10px;
+    font-family: Gopher;
+    color: #1d1d1b;
+  }
+  
+  .lista-competiciones {
+    color: #efc981;
+    padding: 4px;
+    font-family: Gotham Rounded Light;
+    font-size: 18px;
+  }
+  
+  .lista-competiciones > li {
+    cursor: default;
+    padding: 8px;
+    border-bottom: 1px solid #c58511
+  }
+  
+  .contenedor-competiciones {
+    display: flex;
+    width: 75vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .competiciones {
+      display: flex;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid #1d1d1b;
+  }
+  
+  .competiciones > h3 {
+    margin-top: 10px;
+    font-family: Gopher;
+    color: #1d1d1b;
+    
+  }
+  
+  .panel {
+    display: block;
+    margin-top: 128px;
+    width: 420px;
+    height: 240px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    border: none;
+    background-color: #1d1d1b;
+    box-shadow: 0px 0px 20px #1d1d1b;
+  }
+  
+  .border-1-compet {
+    position: absolute;
+    z-index: 0.5;
+    width: 90vw;
+    height: 80vh;
+    border: 3px solid #1d1d1b;
+    pointer-events: none;
+  }
+  
+  .border-2-compet {
+    position: absolute;
+    z-index: 0.5;
+    width: 87vw;
+    height: 75vh;
+    border: 1px solid #1d1d1b;
+    pointer-events: none;
+  }
+  
+  #compet-text {
+    width: 400px;
+    height: 240px;
+    text-align: justify;
+    margin-right: 24px;
+    font-family: Gotham Rounded Light, sans-serif;
+    color:#1d1d1b;
+    font-size: 18px;
+  
+  }
+  
+  #flechit-compet {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    
+  }
+  
+  #flechita-compet > img {
+    position: absolute;
+    top: 32vh;
+    left: 20vw;
+    height: 150px;
+    padding: 24px;
+    z-index: 1;
+  }
+  }
+
+/* EXPERIENCIA COMPETICIONES FULL */
+
+/* EXPERIENCIA COMPETICIONES MOBILE */
+
+@media (max-width: 1366px) {
+  #experiencia {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to left top, #c58511, #efc981);
+  }
+  
+  .copa {
+    width: 32px;
+    z-index: 5;
+  }
+  
+  .container-compet {
+    margin-top: 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container-compet > h3{
+    font-family: Gopher;
+    color: #1d1d1b;
+  }
+  
+  .lista-competiciones {
+    color: #efc981;
+    font-family: Gotham Rounded Light;
+    font-size: 0.8em;
+  }
+  
+  .lista-competiciones > li {
+    cursor: default;
+    border-bottom: 1px solid #c58511
+  }
+  
+  .contenedor-competiciones {
+    display: flex;
+    width: 75vw;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .competiciones {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+      align-items: center;
+      justify-content: center;
+      border-bottom: 2px solid #1d1d1b;
+  }
+  
+  .competiciones > h3 {
+    font-family: Gopher;
+    color: #1d1d1b;
+    
+  }
+  
+  .panel {
+    display: block;
+    width: 280px;
+    height: 240px;
+    margin-bottom: 8em;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    border: none;
+    background-color: #1d1d1b;
+    box-shadow: 0px 0px 20px #1d1d1b;
+  }
+  
+  .border-1-compet {
+    position: absolute;
+    z-index: 0.5;
+    width: 90vw;
+    height: 80vh;
+    border: 3px solid #1d1d1b;
+    pointer-events: none;
+  }
+  
+  .border-2-compet {
+    position: absolute;
+    z-index: 0.5;
+    width: 87vw;
+    height: 75vh;
+    border: 1px solid #1d1d1b;
+    pointer-events: none;
+  }
+  
+  #compet-text {
+    width: 240px;
+    height: 240px;
+    text-align: justify;
+    font-family: Gotham Rounded Light, sans-serif;
+    color:#1d1d1b;
+    font-size: 0.8em;
+  
+  }
+  
+  #flechit-compet {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    
+  }
+  
+  #flechita-compet > img {
+    position: absolute;
+    transform: translate(10vw, -15vh);
+    height: 150px;
+    padding: 24px;
+    z-index: 1;
+  }
+  }
+
+/* EXPERIENCIA COMPETICIONES MOBILE */
+
+/* GALERIA */
+
+@media (min-width: 1366px) {
+#trabajos {
+  height: 100vh;
+  background-image: linear-gradient(to left top, #1d1d1b, black);
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#trabajos > h1 {
+  font-family: Gopher;
+  color: #efc981;
+  padding-bottom: 12px;
+}
+
+.carousel {
+  box-shadow: 0px 0px 24px #c58511;
+  height: 500px;
+  width: 740px;
+}
+
+#flechita-gale {
+  display: block;
+  position: absolute;
+}
+
+#flechita-gale > img {
+  position: absolute;
+  top: 25vh;
+  left: 38vw;
+  height: 150px;
+  padding: 24px;
+}
+}
+/* GALERIA */
+
+/* GALERIA MOBILE */
+
+@media (max-width: 1366px) {
+  #trabajos {
+    height: 100vh;
+    background-image: linear-gradient(to left top, #1d1d1b, black);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #trabajos > h1 {
+    font-family: Gopher;
+    font-size: 2em;
+    color: #efc981;
+    padding-bottom: 12px;
+  }
+  
+  .carousel {
+    box-shadow: 0px 0px 24px #c58511;
+    height: 240px;
+    width: 300px;
+  }
+  
+  #flechita-gale {
+    display: block;
+    position: absolute;
+  }
+  
+  #flechita-gale > img {
+    position: absolute;
+    top: 30vh;
+    left: 10vw;
+    height: 150px;
+    padding: 24px;
+  }
+  }
+
+/* GALERIA MOBILE */
+
+/* GALERIA FULL */
+
+@media (min-width: 1920px) {
+  #trabajos {
+    height: 100vh;
+    background-image: linear-gradient(to left top, #1d1d1b, black);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  #trabajos > h1 {
+    font-family: Gopher;
+    color: #efc981;
+    padding-bottom: 12px;
+  }
+  
+  .carousel {
+    box-shadow: 0px 0px 24px #c58511;
+    height: 500px;
+    width: 740px;
+  }
+  
+  #flechita-gale {
+    display: block;
+    position: absolute;
+  }
+  
+  #flechita-gale > img {
+    position: absolute;
+    top: 32vh;
+    left: 40vw;
+    height: 150px;
+    padding: 24px;
+  }
+  }
+
+/* GALERIA FULL */
+
+/* CONTACTO */
+@media (min-width: 1366px) {
+#contacto {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(to bottom right, #c58511, #efc981);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  cursor: pointer;
+}
+
+#contacto > a > button{
+  padding: 12px;
+  background-color: transparent;
+  font-family: Gotham Rounded Light, sans-serif;
+  font-size: 18px;
+  color: #efc881;
+  border: 2px solid #c58511;
+  background-color: #1d1d1b;
+  padding-left: 24px;
+  padding-right: 24px;
+  transition: all .2s ease-in-out;
+}
+
+#contacto > a > button:hover{
+  transform: scale(1.2);
+  padding: 12px;
+  background-color: transparent;
+  font-family: Gotham Rounded Light, sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: #efc881;
+  border: 2px solid #c58511;
+  box-shadow: 0px 0px 10px #efc881;
+  background-color: #1d1d1b;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+#contacto {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.sociales {
+  padding: 12px;
+}
+
+.sociales > a {
+  padding-top: 24px;
+  padding: 12px;
+  cursor: pointer;
+}
+
+.sociales > a > img:hover {
+  transform: scale(1.2);
+}
+
+.sociales > a > img {
+  height: 84px;
+  padding: 12px;
+  transition: all .2s ease-in-out;
+}
+
+#contact-panel {
+  padding: 0px;
+  width: 680px;
+  height: 150px;
+  margin: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  cursor: none;
+}
+
+#contact-panel > .panel-body > ul {
+  padding: 0;
+  margin: 0;
+}
+
+#contact-panel > .panel-body {
+  margin: 0px;
+  padding: 0px;
+}
+}
+/* CONTACTO */
+
+
+/* CONTACTO MOBILE */
+
+@media (max-width: 1366px) {
+  #contacto {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(to bottom right, #c58511, #efc981);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button {
+    cursor: pointer;
+  }
+  
+  #contacto > a > button{
+    padding: 12px;
+    background-color: transparent;
+    font-family: Gotham Rounded Light, sans-serif;
+    font-size: 18px;
+    color: #efc881;
+    border: 2px solid #c58511;
+    background-color: #1d1d1b;
+    padding-left: 24px;
+    padding-right: 24px;
+    transition: all .2s ease-in-out;
+  }
+  
+  #contacto {
+    display: flex;
+    flex-direction: column;
+  
+  }
+  
+  .sociales {
+    display: flex;
+    padding: 12px;
+    width: 80vw;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .sociales > a {
+    padding-top: 24px;
+    padding: 12px;
+    cursor: pointer;
+  }
+  
+  
+  .sociales > a > img {
+    height: 64px;
+    padding: 12px;
+    transition: all .2s ease-in-out;
+  }
+  
+  #contact-panel {
+    padding: 0px;
+    width: 90vw;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    cursor: none;
+  }
+
+  #contact-panel > .panel-body > ul:active{
+    transform: scale(1.5);
+  }
+  
+  #contact-panel > .panel-body > ul {
+    padding: 0;
+    margin: 0;
+    width: 80vw;
+  }
+  
+  #contact-panel > .panel-body > ul > img {
+    padding: 0px;
+    margin: 0px;
+    width: auto;
+  }
+  
+
+  #contact-panel > .panel-body {
+    margin: 0px;
+    padding: 0px;
+  }
+  }
+
+/* CONTACTO MOBILE */
