@@ -32,6 +32,39 @@
     <div class="contenedor-principal">
       <div id="turno-main">
       <div class="contenedor-navegacion">
+        
+        <nav role="navigation">
+          <div id="menuToggle">
+            <!--
+            A fake / hidden checkbox is used as click reciever,
+            so you can use the :checked selector on it.
+            -->
+            <input type="checkbox" />
+            
+            <!--
+            Some spans to act as a hamburger.
+            
+            They are acting like a real hamburger,
+            not that McDonalds stuff.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+            
+            <!--
+            Too bad the menu has to be inside of the button
+            but hey, it's pure CSS magic.
+            -->
+            <ul id="menu">
+              <a href="#acerca"><li>SOBRE MI</li></a>
+              <a href="#experiencia"><li>EXPERIENCIA</li></a>
+              <a href="#trabajos"><li>TRABAJOS</li></a>
+              <a href="#contacto"><li>CONTACTO</li></a>
+            </ul>
+          </div>
+        </nav>
+
+
         <button
           class="animate__animated animate__bounceInLeft animate__delay-1s"
         >
@@ -75,13 +108,9 @@
         />
 
         <p class="main">
-          Soy Eusebio Morinigo, estilista y maestro masculino y femenino.
-          Comencé a trabajar en el año. 2000 desde 2003 soy propietario, local
-          ubicado en Nogoya 6170, barrio de Versalles, Capital Federal.
-          Participo asiduamente en competiciones de estilismo. Desde 2003 estoy instalado en
-          el barrio de Versalles - Capital Federal, donde forme una clientela fiel gracias a mucho esfuerzo
-          y buenos resultados. En paralelo, competí en más de una docenas de campeonatos de
-          estilismo, tanto en Argentina como en el exterior.
+          Soy Eusebio Morinigo, estilista y maestro en cortes y peinados tanto masculinos como femeninos. Comencé a trabajar en el año 2000 y desde 2003 soy propietario de un salón ubicado en Nogoya 6170, en el barrio de Versalles, Capital Federal. A su vez, participo regularmente en competiciones de estilismo, tanto a nivel nacional como internacional.
+
+A lo largo de estos años, he logrado establecer una clientela fiel gracias a mi dedicación y los buenos resultados obtenidos. Además, he competido en más de una docena de campeonatos de estilismo, tanto en Argentina como en el extranjero, lo que me ha permitido seguir creciendo y mejorando mis habilidades
         </p>
         <a id="flechita" class="animate__animated animate__bounce animate__infinite" href="#experiencia"><img src="./assets/img/icons/flechita.png" alt=""></a>
       </div>
