@@ -16,6 +16,13 @@
 
 /* BURGUER */
 
+@media (min-width: 1366px) {
+  .contenedor-navegacion > nav {
+    display: none;
+  }
+
+}
+
 @media (max-width: 1366px) {
 
 #menuToggle
@@ -491,7 +498,7 @@
   #flechita {
     position: absolute;
     z-index: 6;
-    bottom: 5;
+    bottom: 4vh;
     right: 0;
   }
   
@@ -924,7 +931,7 @@
   
   #flechita-gale > img {
     position: absolute;
-    top: 45vh;
+    top: 35vh;
     left: 28vw;
     height: 80px;
     padding: 24px;
