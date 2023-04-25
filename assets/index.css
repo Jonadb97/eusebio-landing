@@ -16,6 +16,8 @@
 
 /* BURGUER */
 
+@media (max-width: 1366px) {
+
 #menuToggle
 {
   display: block;
@@ -157,6 +159,7 @@
 {
   transform: none;
 }
+}
 
 /* BURGER */
 
@@ -287,7 +290,7 @@
 
   .logotipo {
     height: 150px;
-    margin-left: 17vw;
+    margin-left: 18vw;
   }
   
   .contenedor-navegacion {
@@ -488,7 +491,7 @@
   #flechita {
     position: absolute;
     z-index: 6;
-    bottom: 0;
+    bottom: 5;
     right: 0;
   }
   
@@ -921,7 +924,7 @@
   
   #flechita-gale > img {
     position: absolute;
-    top: 40vh;
+    top: 45vh;
     left: 28vw;
     height: 80px;
     padding: 24px;
