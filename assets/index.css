@@ -16,14 +16,14 @@
 
 /* BURGUER */
 
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
   .contenedor-navegacion > nav {
     display: none;
   }
 
 }
 
-@media (max-width: 1366px) {
+@media (max-width: 1360px) {
 
 #menuToggle
 {
@@ -180,7 +180,7 @@
   width: 100%;
 }
 
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
 
 .logotipo {
   height: 180px;
@@ -284,7 +284,7 @@
 
 /* NAVEGACION MOBILE */
 
-@media (max-width: 1366px) {
+@media (max-width: 1360px) {
 
   #turno-main {
     height: 100vh;
@@ -297,7 +297,10 @@
 
   .logotipo {
     height: 150px;
-    margin-left: 18vw;
+    margin-left: auto;
+    display: block;
+    margin-right: auto;
+
   }
   
   .contenedor-navegacion {
@@ -349,7 +352,7 @@
 /* INICIO SOBRE MI */
 
 
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
 .filler-inicio {
   height: 100vh;
 }
@@ -431,7 +434,7 @@
 
 /* INICIO MOBILE */
 
-@media (max-width: 1366px) {
+@media (max-width: 1360px) {
   .filler-inicio {
     height: 100vh;
   }
@@ -513,7 +516,7 @@
 
 /* EXPERIENCIA COMPETICIONES */
 
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
 #experiencia {
   height: 100vh;
   width: 100%;
@@ -742,7 +745,7 @@
 
 /* EXPERIENCIA COMPETICIONES MOBILE */
 
-@media (max-width: 1366px) {
+@media (max-width: 1360px) {
   #experiencia {
     height: 100vh;
     width: 100%;
@@ -860,7 +863,7 @@
 
 /* GALERIA */
 
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
 #trabajos {
   height: 100vh;
   background-image: linear-gradient(to left top, #1d1d1b, black);
@@ -900,7 +903,7 @@
 
 /* GALERIA MOBILE */
 
-@media (max-width: 1366px) {
+@media (max-width: 1360px) {
   #trabajos {
     height: 100vh;
     background-image: linear-gradient(to left top, #1d1d1b, black);
@@ -982,7 +985,7 @@
 /* GALERIA FULL */
 
 /* CONTACTO */
-@media (min-width: 1366px) {
+@media (min-width: 1360px) {
 #contacto {
   height: 100vh;
   width: 100%;
@@ -1077,7 +1080,7 @@ button {
 
 /* CONTACTO MOBILE */
 
-@media (max-width: 1366px) {
+@media (max-width: 1360px) {
   #contacto {
     height: 100vh;
     width: 100%;
